@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_boke?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: qiuyeyuan1314
+    driver-class-name: com.mysql.jdbc.Driver
+
+Mybatis:
+  mapper-Locations= classpath:resources/BlogMapper.xml,classpath*:resources/UserMapper.xml
