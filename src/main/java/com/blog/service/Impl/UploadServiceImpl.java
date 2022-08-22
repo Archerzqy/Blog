@@ -26,8 +26,8 @@ public class UploadServiceImpl implements UploadService {
             return Upload.fail("400","文件为空");
         }
         String OriginalFilename= file.getOriginalFilename();
-        String fileName=System.currentTimeMillis()+"."+OriginalFilename.substring(OriginalFilename.lastIndexOf("."+1));
-        String filePath="D:\\shangchuan";
+        String fileName = System.currentTimeMillis()+"."+OriginalFilename.substring(OriginalFilename.lastIndexOf(".")+1);
+        String filePath="D:\\shangchuan\\";
         File dest=new File(filePath+fileName);
         if (!dest.getParentFile().exists())
             dest.getParentFile().mkdir();

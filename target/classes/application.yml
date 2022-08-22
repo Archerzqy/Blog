@@ -4,6 +4,10 @@ spring:
     username: root
     password: qiuyeyuan1314
     driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
 
 Mybatis:
   mapper-Locations= classpath:resources/BlogMapper.xml,classpath*:resources/UserMapper.xml
